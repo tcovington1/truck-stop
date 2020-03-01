@@ -1,0 +1,27 @@
+.row {
+  max-width: $flex-width;
+  // background-color: gray;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  // color: white;
+  
+  //puts the gutter on everything except the last child
+  &:not(:last-child) {
+    margin-left: $gutter-vertical;
+  }
+
+  .col-1-of-2 {
+    width: 50%;
+    margin-left: 2rem;
+    // border: 2px solid red;
+
+  }
+
+  &._column {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+}

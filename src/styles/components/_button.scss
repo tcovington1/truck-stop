@@ -26,6 +26,12 @@
     padding: 1.5rem 4rem;
   
   }
+  &--orange {
+    background-color: $color-secondary-dark;
+    color: $color-white;
+    padding: 1.5rem 4rem;
+  
+  }
   &::after {
     /* pseuedo element always need content */
     content: '';

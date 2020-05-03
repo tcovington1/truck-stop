@@ -4,11 +4,12 @@
       to right bottom,
       rgba($light-blue, 0.699),
       rgba($dark-blue, 0.801)),
-    url(../../assets/img/hero.jpg);
+      url(../../assets/food-truck-city.jpg);
+    // url(../../assets/img/hero.jpg);
   background-size: cover;
-  background-position: top;
+  background-position: bottom;
   position: relative;
-  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
   
   &__logo-box {
     position: absolute;
@@ -22,6 +23,7 @@
 
   &__text-box {
     position: absolute;
+    width: fit-content;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);

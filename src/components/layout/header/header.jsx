@@ -6,20 +6,20 @@ import Fade from 'react-reveal'
 const header = () => {
   return (
     <div className='header'>
-      <div className="header__logo-box">
+      {/* <div className="header__logo-box">
         <img src={Logo} alt="logo" className='header__logo'/>
-      </div>
+      </div> */}
       <div className="header__text-box">
         <h1 className='primary-heading'>
           <Fade left>
-            <span className='primary-heading--main'>Adventours</span>
+            <span className='primary-heading--main'>the truck stop</span>
           </Fade>
           <Fade right>
-            <span className='primary-heading--sub'>start your adventure</span>
+            <span className='primary-heading--sub'>we take your mobile business online</span>
           </Fade>
         </h1>
         <Fade bottom>
-          <a href="#" className='btn btn--white'>Discover Our Tours</a>
+          <a href="#quote" className='btn btn--orange'>Get A Quote</a>
         </Fade>
       </div>
     </div>

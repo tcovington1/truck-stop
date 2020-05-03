@@ -1,7 +1,8 @@
 import React from 'react'
 import '../styles/main.scss'
 
-const Card = ({heading, price}) => {
+const Card = ({heading, price, frontDetails, backDetails}) => {
+
   return (
     <div className='card'>
       <div className="card__side card__side--front">
@@ -13,7 +14,9 @@ const Card = ({heading, price}) => {
         </h5>
         <div className="card__details">
           <ul>
-            <li>Professional One-Site Page</li>
+            <li>
+              {frontDetails}
+            </li>
           </ul>
         </div>
         <div className="u-center-text">
@@ -27,12 +30,9 @@ const Card = ({heading, price}) => {
         </h4>
         <div className="card__details">
           <ul>
-            <li>Professional One-Site Page</li>
-            <li>Call To Action Buttons</li>
-            <li>Testimonials</li>
-            <li>Images</li>
-            <li>Contact Form</li>
-            <li>Mobile Responsive</li>
+            <li>
+              {backDetails}
+            </li>
           </ul>
         <div className="u-center-text">
           <a href="#" className='btn btn--orange my1'>Book Now</a>

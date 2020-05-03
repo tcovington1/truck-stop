@@ -1,6 +1,6 @@
 import React from 'react'
 import '../../../styles/main.scss'
-import Logo from '../../../assets/img/logo-white.png'
+// import Logo from '../../../assets/img/logo-white.png'
 import Fade from 'react-reveal'
 
 const header = () => {

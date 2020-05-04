@@ -103,7 +103,7 @@
 
   @include respond(tab-port) {
     height: auto;
-    border-radius: 5px;
+    // border-radius: 5px;
 
     &__side {
       transition: all .8s ease;

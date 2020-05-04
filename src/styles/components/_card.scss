@@ -6,6 +6,7 @@
   position: relative;
   height: 50rem;
   width: 35rem;
+  // border-radius: 5px;
 
   
   &__side {
@@ -16,7 +17,11 @@
     left: 0;
     width: 100%;
     backface-visibility: hidden;
-    border-radius: 3px;
+
+    &--front {
+      background-color: white;
+      
+    }
 
     &--back {
       // background-color: green;
@@ -98,12 +103,12 @@
 
   @include respond(tab-port) {
     height: auto;
+    border-radius: 5px;
 
     &__side {
       transition: all .8s ease;
       height: auto;
       position: relative;
-      border-radius: 3px;
       &--front {
         background-color: white;
         

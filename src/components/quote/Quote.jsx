@@ -36,7 +36,9 @@ const Quote = () => {
                       Premium
                     </label>
                   </div>
-                  <a href="#" className='btn btn--orange my3'>Get A Quote</a>
+                  <div className="u-center-text">
+                    <a href="#" className='btn btn--orange my3'>Get A Quote</a>
+                  </div>
                 </div>
               </form>
             </div>

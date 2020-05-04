@@ -50,6 +50,7 @@ body {
   @include respond(tab-port) {
     padding: 1rem;
   }
+
 }
 
 .heading-tertiary {
@@ -66,6 +67,10 @@ body {
   display: inline-block;
   -webkit-background-clip: text;
   color: white;
+
+  @include respond(phone) {
+    padding: 1.5rem;
+  }
 }
 .paragraph {
   font-size: $default-font-size;

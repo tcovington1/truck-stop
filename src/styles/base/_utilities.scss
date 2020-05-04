@@ -21,3 +21,9 @@
  .my3 {
    margin: 3rem 0;
  }
+
+ .hide-mob {
+  @include respond(tab-port) {
+    display: none;
+  }
+ }

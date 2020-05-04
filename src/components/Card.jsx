@@ -21,11 +21,11 @@ const Card = ({heading, price, frontDetails, backDetails}) => {
         </div>
         <div className="u-center-text">
           {/* <a href="#" className='btn btn--orange'>Details</a> */}
-          <h3>More Details ></h3>
+          <h3 className='hide-mob'>More Details ></h3>
         </div>
       </div>
       <div className="card__side card__side--back card__side--back-1">
-        <h4 className="card__heading ">
+        <h4 className="card__heading hide-mob">
           {heading}
         </h4>
         <div className="card__details">

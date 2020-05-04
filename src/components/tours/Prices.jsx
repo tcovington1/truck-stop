@@ -30,7 +30,7 @@ const Prices = () => {
   ]
 
     const mapCardDataFn = (cardData) => (
-      <div className="tour-flex">
+      <div className="row__bottom">
         <Card 
           heading={cardData.heading}
           price={cardData.price}

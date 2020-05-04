@@ -5,7 +5,7 @@ body {
   font-size: 16px;
   line-height: 1.7;
   color: $color-grey-dark;
-  padding: 20px;
+  
 }
 
 
@@ -20,12 +20,20 @@ body {
     font-size: 5rem;
     font-weight: 400;
     letter-spacing: 2rem;
+
+      @include respond(phone) {
+        letter-spacing: .5rem;
+      }
   }
 
   &--sub {
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: 1rem;
+
+    @include respond(phone) {
+      letter-spacing: .25rem;
+    }
   
   }
 }
@@ -38,6 +46,10 @@ body {
   background-image: linear-gradient(to right, $light-blue, $dark-blue);
   -webkit-background-clip: text;
   color: transparent;
+
+  @include respond(tab-port) {
+    padding: 1rem;
+  }
 }
 
 .heading-tertiary {

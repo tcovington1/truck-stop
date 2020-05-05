@@ -9,23 +9,26 @@ const Prices = () => {
     {
       id: 1,
       heading: 'Basic',
+      headingColor: 1,
       price: '$395',
-      frontData: [ 'Professional One-Site Page' ],
+      frontData: [ 'One-Time Payment' ,'Professional One-Site Page' ],
       backData: [ 'Professional One-Site Page', 'Call To Action Buttons', 'Testimonials', 'Images', 'Contact Form', 'Mobile Responsive'  ],
     },
     {
       id: 2,
       heading: 'Premium',
-      price: '$395',
-      frontData: [ 'Basic + SEO' ],
-      backData: [ 'Professional One-Site Page', 'Call To Action Buttons', 'Testimonials', 'Images', 'Contact Form', 'Mobile Responsive'  ],
+      headingColor: 2,
+      price: '$595',
+      frontData: [ 'One-Time Payment', 'Basic + SEO' ],
+      backData: [ 'Basic Package', 'SEO submission', 'Google Maps Submission', 'A/B Testing', 'Contact Form' ],
     },
     {
-      id: 1,
+      id: 3,
       heading: 'Monthly',
+      headingColor: 3,
       price: '$350',
-      frontData: [ 'Social Media Management', 'SEO' ],
-      backData: [ 'Professional One-Site Page', 'Call To Action Buttons', 'Testimonials', 'Images', 'Contact Form', 'Mobile Responsive'  ],
+      frontData: [  'Monthly Subscription' ,'Social Media Management', 'SEO', 'Cancel Anytime' ],
+      backData: [ 'FaceBook', 'Instagram', '2x Posting Per Week', 'Weekly Performance Updates'  ],
     },
   ]
 
@@ -36,6 +39,7 @@ const Prices = () => {
           price={cardData.price}
           frontDetails={cardData.frontData}
           backDetails={cardData.backData}
+          headingColor={cardData.headingColor}
         />
       </div>
     );

@@ -1,12 +1,12 @@
 import React from 'react'
 import '../styles/main.scss'
 
-const Card = ({heading, price, frontDetails, backDetails}) => {
+const Card = ({heading, price, frontDetails, backDetails, headingColor}) => {
 
   return (
     <div className='card'>
       <div className="card__side card__side--front">
-        <h4 className="card__heading">
+        <h4 className={`card__heading card__heading-${headingColor}`}>
           {heading}
         </h4>
         <h5 className="card__price">
@@ -15,7 +15,9 @@ const Card = ({heading, price, frontDetails, backDetails}) => {
         <div className="card__details">
           <ul>
             <li>
-              {frontDetails}
+            {frontDetails.map(detail => {
+                 return <li>{detail}</li>
+              })}
             </li>
           </ul>
         </div>
@@ -25,14 +27,16 @@ const Card = ({heading, price, frontDetails, backDetails}) => {
         </div>
       </div>
       <div className="card__side card__side--back card__side--back-1">
-        <h4 className="card__heading hide-mob">
+        <h4 className={`card__heading hide-mob card__heading-${headingColor}`}>
           {heading}
         </h4>
         <div className="card__details">
           <ul>
-            <li>
-              {backDetails}
-            </li>
+            
+              {backDetails.map(detail => {
+                 return <li>{detail}</li>
+              })}
+            
           </ul>
         <div className="u-center-text">
           <a href="#" className='btn btn--orange my1'>Book Now</a>

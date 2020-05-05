@@ -36,6 +36,13 @@ const Quote = () => {
                       Premium
                     </label>
                   </div>
+                  <div className="form__radio-group">
+                    <input type="radio" className="form__radio-input" id='monthly' name='choice'/>
+                    <label htmlFor="monthly" className="form__radio-label">
+                      <span className="form__radio-button"></span>
+                      Monthly
+                    </label>
+                  </div>
                   <div className="u-center-text">
                     <a href="#" className='btn btn--orange my3'>Get A Quote</a>
                   </div>

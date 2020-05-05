@@ -53,7 +53,7 @@
   //* Card Contents
   
   &__heading {
-    background-color: $color-secondary-light;
+    // background-color: $color-secondary-light;
     // height: 10rem;
     font-size: 3rem;
     font-weight: 300;
@@ -61,6 +61,20 @@
     color: $color-white;
     text-align: center;
     padding: 3rem;
+
+    &-1 {
+      background-color: $color-secondary-light;
+
+      }
+    &-2 {
+      background-color: purple;
+
+      }
+
+    &-3 {
+      background-color: green;
+
+      } 
     
     // &--back {
       //   background-color: $color-white;
@@ -127,22 +141,29 @@
     //* Card Contents
     
     &__heading {
-      background-color: $color-secondary-light;
       // height: 10rem;
       font-size: 3rem;
       font-weight: 300;
       text-transform: uppercase;
       color: $color-white;
       text-align: center;
-      padding: 3rem;
-      
-      // &--back {
-        //   background-color: $color-white;
-        //   color: $color-secondary-light
-        
-        // }
-      }
-      
+      padding: 3rem; 
+
+      &-color-1 {
+        background-color: $color-secondary-light;
+  
+        }
+      &-color-2 {
+        background-color: purple;
+  
+        }
+
+      &-color-3 {
+        background-color: green;
+  
+        }    
+    }
+
       &__price {
         text-align: center;
         padding: 1rem;

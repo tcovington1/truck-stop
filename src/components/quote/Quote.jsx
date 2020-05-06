@@ -10,7 +10,7 @@ const Quote = () => {
               <form className="form">
                 <div className="u-center-text u-margin-bottom-big">
                   <h1 className="heading-secondary">
-                    Request a Quote
+                    Free Website Analysis
                   </h1>
                 </div>
                 <div className="form__group">
@@ -22,6 +22,11 @@ const Quote = () => {
                   <label htmlFor="email" className="form__label">Email</label>
                 </div>
                 <div className="form__group">
+                  <input type="text" className="form__input" placeholder='Website URL' id='website' required/>
+                  <label htmlFor="website" className="form__label">Website URL</label>
+                </div>
+                <div className="form__group">
+                  <label className="form__label form__label-interest">Which Package Interests You?</label>
                   <div className="form__radio-group">
                     <input type="radio" className="form__radio-input" id='basic' name='choice'/>
                     <label htmlFor="basic" className="form__radio-label">

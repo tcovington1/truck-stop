@@ -38,6 +38,13 @@
     margin-top: .7rem;
     display: block;
     transition: all .3s;
+    
+    &-interest {
+      font-size: 1.5rem;
+      width: 50%;
+      margin-bottom: 1rem;
+      margin-left: 0rem;
+    }
   }
 
   &__input:placeholder-shown + &__label {

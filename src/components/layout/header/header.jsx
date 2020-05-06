@@ -19,7 +19,7 @@ const header = () => {
           </Fade>
         </h1>
         <Fade bottom>
-          <a href="#quote" className='btn btn--orange'>Get A Quote</a>
+          <a href="#quote" className='btn btn--orange'>Send my Free Analysis</a>
         </Fade>
       </div>
     </div>

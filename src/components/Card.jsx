@@ -9,9 +9,12 @@ const Card = ({heading, price, frontDetails, backDetails, headingColor}) => {
         <h4 className={`card__heading card__heading-${headingColor}`}>
           {heading}
         </h4>
-        <h5 className="card__price">
-          {price}
-        </h5>
+        <div className="card__price-box">
+          <small>Starting At</small>
+          <h5 className="card__price">
+            {price}
+          </h5>
+        </div>
         <div className="card__details">
           <ul>
             <li>
@@ -39,7 +42,7 @@ const Card = ({heading, price, frontDetails, backDetails, headingColor}) => {
             
           </ul>
         <div className="u-center-text">
-          <a href="#" className='btn btn--orange my1'>Book Now</a>
+          <a href="#" className='btn btn--orange my1'>Request A Quote</a>
         </div>
       </div>
     </div>

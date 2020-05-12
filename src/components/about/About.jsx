@@ -27,7 +27,7 @@ const About = () => {
             <div className="col-1-of-4">
               <div className="feature-box">
                 <Icon icon={roundBuild} width='55' className='feature-box__icon' color='#277' />
-                <h3 className="heading-tertiary heading-tertiary-lgfont u-margin-bottom-small">Web Design</h3>
+                <h3 className="heading-tertiary heading-tertiary-lgfont u-margin-bottom-small">Website Design</h3>
                 <p className="feature-box__text u-margin-bottom-small">
                   We design and build your website to <i>improve your sales</i>.
                 </p>

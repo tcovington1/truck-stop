@@ -20,7 +20,7 @@ const Prices = () => {
       headingColor: 2,
       price: '$595',
       frontData: [ 'One-Time Payment', 'Basic + SEO' ],
-      backData: [ 'Basic Package', 'SEO submission', 'Google Maps Submission', 'A/B Testing', 'Contact Form' ],
+      backData: [ 'Basic Package', 'SEO submission', 'Google Maps Submission', 'A/B Testing', ],
     },
     {
       id: 3,

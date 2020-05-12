@@ -6,7 +6,7 @@
   position: relative;
   height: 50rem;
   width: 35rem;
-  // border-radius: 5px;
+  border-radius: 5px;
 
   
   &__side {
@@ -82,13 +82,17 @@
       
       // }
     }
-    
-    &__price {
+
+    &__price-box{
       text-align: center;
-      padding: 1rem;
-      font-size: 4rem;
       color: $color-grey-dark-2;
       border-bottom: 1px solid $color-grey-light-1;
+      padding: 1rem;
+
+    }
+    
+    &__price {
+      font-size: 4rem;
       width: 95%;
       margin: 0 auto;
 

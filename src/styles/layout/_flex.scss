@@ -12,7 +12,7 @@
   }
   @include respond(phone) {
     flex-direction: column;
-    max-width: 70%;
+    max-width: 95%;
   }
   
   //puts the gutter on everything except the last child

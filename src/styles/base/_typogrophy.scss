@@ -36,6 +36,16 @@ body {
     }
   
   }
+  &--ter {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: .75rem;
+
+    @include respond(phone) {
+      letter-spacing: .25rem;
+    }
+  
+  }
 }
 
 .heading-secondary {

@@ -1,7 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react'
+import Modal from 'react-modal'
+import Quote from './quote/Quote';
+
 import '../styles/main.scss'
 
+
+const customStyles = {
+  content : {
+    top                   : '50%',
+    left                  : '50%',
+    right                 : 'auto',
+    bottom                : 'auto',
+    marginRight           : '-50%',
+    transform             : 'translate(-50%, -50%)',
+    height: '95vh',
+    width: '50%'
+  }
+};
+
 const Card = ({heading, price, frontDetails, backDetails, headingColor}) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
     <div className='card'>
@@ -42,7 +60,15 @@ const Card = ({heading, price, frontDetails, backDetails, headingColor}) => {
             
           </ul>
         <div className="u-center-text">
-          <a href="#" className='btn btn--orange my1'>Request A Quote</a>
+          <button onClick={() => setIsModalOpen(true)} className='btn btn--orange my1'>Request A Quote</button>
+          <Modal isOpen={isModalOpen} onRequestClose={() => setIsModalOpen(false)}
+            style={customStyles}
+            >
+
+              <Quote 
+                modal={isModalOpen} 
+                setModal={setIsModalOpen}/>
+            </Modal>
         </div>
       </div>
     </div>

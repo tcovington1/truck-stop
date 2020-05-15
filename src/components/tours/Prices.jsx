@@ -1,9 +1,10 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Card from '../Card'
 import Fade from 'react-reveal/Fade'
 
-const Prices = () => {
 
+
+const Prices = () => {
 
   const cardData = [
     {

@@ -55,7 +55,7 @@
   }
 }
 
-.section-quote {
+.section-analysis {
   padding: 8rem 0;
   background-image: linear-gradient(to right bottom, $light-blue, $dark-blue);
 
@@ -99,4 +99,9 @@
    
   }
 
+}
+
+.section-quote {
+  background-color: $color-grey-light-1;
+  padding: 6rem;
 }

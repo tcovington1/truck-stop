@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 
-class Quote extends Component {
+class Analysis extends Component {
   state = { name: "", email: "", website: ""};
 
   handleChange = e => {
@@ -12,15 +12,18 @@ class Quote extends Component {
     e.preventDefault();
   };
 
-  render(modal, setModal) {
+  render() {
     const { name, email, website } = this.state
     return (
       <>
-        <div className="section-quote" id='quote'>
+        <div className="section-analysis" id='quote'>
+          <div className="row">
+            <div className="quote">
+              <div className="quote__form">
               <form className='form' action="https://formspree.io/xpzywnlz" method="POST">
                   <div className="u-center-text u-margin-bottom-big">
                     <h1 className="heading-secondary">
-                      Request A Quote
+                      Free Website Analysis
                     </h1>
                   </div>
                   <div className="form__group">
@@ -51,7 +54,8 @@ class Quote extends Component {
                       value={website}
                       onChange={this.handleChange}
                       required/>
-                    <label htmlFor="website" className="form__label">Website URL</label>
+                    <label htmlFor="website" className="form__label">Website URL <small>Optional</small></label>
+                    
                   </div>
                   <div className="form__group">
                     <label className="form__label form__label-interest">Which Package Interests You?</label>
@@ -79,18 +83,15 @@ class Quote extends Component {
                     <div className="u-center-text">
                       <button className='btn btn--orange my3'>Get My Free Analysis</button>
                     </div>
-                    <div className="u-center-text">
-                      <button className='btn btn--orange_secondary' onClick={() => setModal(!modal)}>Close</button>
-                      {console.log(modal)}
-                    </div>
                   </div>
                 </form>
-                    
               </div>
-            
+            </div>
+          </div>
+        </div> 
       </>
     )
   }
 }
 
-export default Quote;
+export default Analysis;

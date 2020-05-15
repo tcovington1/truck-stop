@@ -1,7 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../../styles/main.scss'
 import Fade from 'react-reveal/Fade'
 import AboutCard from './AboutCard'
+import Modal from 'react-modal'
+import ServicesCard from './ServicesCard'
+
+import servicesData from './servicesData'
+
 
 //Icons
 import { Icon } from '@iconify/react';
@@ -11,7 +16,23 @@ import twotoneMobileFriendly from '@iconify/icons-ic/twotone-mobile-friendly';
 import baselineRateReview from '@iconify/icons-ic/baseline-rate-review';
 
 
+const customStyles = {
+  content : {
+    top                   : '50%',
+    left                  : '50%',
+    right                 : 'auto',
+    bottom                : 'auto',
+    marginRight           : '-50%',
+    transform             : 'translate(-50%, -50%)',
+    width: '50%'
+  }
+};
+
 const About = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+
+
   return (
     <>
       <section className="section-about">
@@ -32,7 +53,23 @@ const About = () => {
                   We design and build your website to <i>improve your sales</i>.
                 </p>
                 
-                <a href="#" className="btn-text">Learn more &rarr;</a>
+                <button onClick={() => setIsModalOpen(true)} className="btn-text">Learn more &rarr;</button>
+                <Modal isOpen={isModalOpen} onRequestClose={() => setIsModalOpen(false)}
+                  style={customStyles}
+                  >
+                    {servicesData.map(service => {
+                      if (service.id === 1) {
+                          return <ServicesCard 
+                            modal={isModalOpen} 
+                            setModal={setIsModalOpen}
+                            id={service.id}
+                            title={service.title}
+                            body={service.body}
+                          />
+                        }
+                      }) 
+                    }
+                </Modal>
               </div>
             </div>
             <div className="col-1-of-4">
@@ -43,7 +80,21 @@ const About = () => {
                   We get your website <i>found</i> by ranking on <strong>Google</strong>.
                 </p>
                 
-                <a href="#" className="btn-text">Learn more &rarr;</a>
+                <button onClick={() => setIsModalOpen(true)} className="btn-text">Learn more &rarr;</button>
+                <Modal isOpen={isModalOpen} onRequestClose={() => setIsModalOpen(false)}
+                  style={customStyles}
+                  >
+                    {servicesData.map(service => {
+                      if (service.id === 2) {
+                          return <ServicesCard 
+                            modal={isModalOpen} 
+                            setModal={setIsModalOpen}
+                            title={service.title}
+                          />
+                        }
+                      }) 
+                    }
+                </Modal>              
               </div>
             </div>
             <div className="col-1-of-4">
@@ -54,8 +105,21 @@ const About = () => {
                   We manage your <strong>Google Ads</strong> to ensure customers <i>see your site</i>.
                 </p>
                 
-                <a href="#" className="btn-text">Learn more &rarr;</a>
-              </div>
+                <button onClick={() => setIsModalOpen(true)} className="btn-text">Learn more &rarr;</button>
+                <Modal isOpen={isModalOpen} onRequestClose={() => setIsModalOpen(false)}
+                  style={customStyles}
+                  >
+                    {servicesData.map(service => {
+                      if (service.id === 3) {
+                          return <ServicesCard 
+                            modal={isModalOpen} 
+                            setModal={setIsModalOpen}
+                            title={service.title}
+                          />
+                        }
+                      }) 
+                    }
+                </Modal>              </div>
             </div>
             <div className="col-1-of-4">
               <div className="feature-box">
@@ -65,8 +129,22 @@ const About = () => {
                   We help get the word out through social media.
                 </p>
                 
-                <a href="#" className="btn-text">Learn more &rarr;</a>
-              </div>
+                <button onClick={() => setIsModalOpen(true)} className="btn-text">Learn more &rarr;</button>
+                <Modal isOpen={isModalOpen} onRequestClose={() => setIsModalOpen(false)}
+                  style={customStyles}
+                  >
+                    {servicesData.map(service => {
+                      if (service.id === 4) {
+                          return <ServicesCard 
+                            modal={isModalOpen} 
+                            setModal={setIsModalOpen}
+                            title={service.title}
+                            body={service.body}
+                          />
+                        }
+                      }) 
+                    }
+                </Modal>              </div>
             </div>
 
             {/* <div className="col-1-of-2">

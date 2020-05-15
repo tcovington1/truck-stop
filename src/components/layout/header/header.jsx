@@ -17,6 +17,9 @@ const header = () => {
           <Fade right>
             <span className='primary-heading--sub'>we take your mobile business online</span>
           </Fade>
+          <Fade right>
+            <span className='primary-heading--ter'>and get you more customers</span>
+          </Fade>
         </h1>
         <Fade bottom>
           <a href="#quote" className='btn btn--orange'>Send my Free Analysis</a>

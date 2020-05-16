@@ -77,7 +77,7 @@ class Quote extends Component {
                       </label>
                     </div>
                     <div className="u-center-text">
-                      <button className='btn btn--orange my3'>Get My Free Analysis</button>
+                      <button className='btn btn--orange my3'>Get My Quote</button>
                     </div>
                     <div className="u-center-text">
                       <button className='btn btn--orange_secondary' onClick={() => setModal(!modal)}>Close</button>

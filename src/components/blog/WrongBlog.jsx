@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const fiveReasons = () => {
+export const WrongBlog = () => {
   return (
     <div>
       <div class="banner">
@@ -15,7 +15,7 @@ export const fiveReasons = () => {
 
 <div class="" align="">
 
-<h1 ><strong>5 Ways To Grow Your Mobile Business Online</strong></h1>
+<h1 ><strong>What Almost Every Mobile Business Does Wrong</strong></h1>
 
 
 </div>

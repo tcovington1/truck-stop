@@ -25,9 +25,9 @@ function App() {
     <Switch>
       <Route exact path="/" component={Landing} />
       <Route  path="/blog" component={blogIndex} />
-      <Route   path="/blog/five-ways-to-grow-your-mobile-business-online" component={fiveReasons} />
-      <Route   path="/blog/what-almost-every-mobile-business-does-wrong" component={WrongBlog} />
-      <Route   path="/blog/why-every-mobile-business-needs-a-website" component={WhyWebsiteBlog} />
+      <Route   path="/five-ways-to-grow-your-mobile-business-online" component={fiveReasons} />
+      <Route   path="/what-almost-every-mobile-business-does-wrong" component={WrongBlog} />
+      <Route   path="/why-every-mobile-business-needs-a-website" component={WhyWebsiteBlog} />
     </Switch>
       <Footer />
     </>

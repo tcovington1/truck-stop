@@ -20,6 +20,11 @@
 
 
 @import './layout/header';
+@import './layout/navbar';
 @import './layout/grid';
 @import './layout/flex';
 @import './layout/footer';
+
+.container {
+  margin-top: 4rem;
+}

@@ -81,12 +81,12 @@ class Quote extends Component {
                     <div className="u-center-text">
                       <button className='btn btn--orange my3'>Get My Quote</button>
                     </div>
+                  </div>
+                </form>
                     <div className="u-center-text">
                       <button className='btn btn--orange_secondary' onClick={() => setModal(!modal)}>Close</button>
                       {console.log(modal)}
                     </div>
-                  </div>
-                </form>
                     
               </div>
             

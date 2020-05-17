@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+// import ReactGA from 'react-ga';
+
 
 
 class Analysis extends Component {
@@ -11,6 +13,15 @@ class Analysis extends Component {
   handleSubmit = e => {
     e.preventDefault();
   };
+
+  // handleClick = () => {
+  //   ReactGA.event({
+  //     category: 'Button',
+  //     action: `Clicked 'Send My Free Analysis' button in Header`
+  //   })
+  // }
+
+  
 
   render() {
     const { name, email, website } = this.state

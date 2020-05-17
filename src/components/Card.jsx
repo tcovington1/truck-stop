@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import Modal from 'react-modal'
 import Quote from './quote/Quote';
+import ReactGA from 'react-ga';
+
 
 import '../styles/main.scss'
 
@@ -21,6 +23,16 @@ const customStyles = {
 
 const Card = ({heading, price, frontDetails, backDetails, headingColor}) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleClick = () => {
+    ReactGA.event({
+      category: 'Button',
+      action: `Clicked 'Send My Free Analysis' button in Header`
+    });
+
+    setIsModalOpen(true)
+
+  }
 
   return (
     <div className='card'>
@@ -61,7 +73,7 @@ const Card = ({heading, price, frontDetails, backDetails, headingColor}) => {
             
           </ul>
         <div className="u-center-text">
-          <button onClick={() => setIsModalOpen(true)} className='btn btn--orange my1'>Request A Quote</button>
+          <button onClick={handleClick} className='btn btn--orange my1'>Request A Quote</button>
           <Modal isOpen={isModalOpen} onRequestClose={() => setIsModalOpen(false)}
             style={customStyles}
             >

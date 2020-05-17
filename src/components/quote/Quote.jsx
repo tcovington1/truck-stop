@@ -12,6 +12,8 @@ class Quote extends Component {
     e.preventDefault();
   };
 
+
+
   render(modal, setModal) {
     const { name, email, website } = this.state
     return (

@@ -32,7 +32,7 @@ const header = () => {
           </Fade>
         </h1>
         <Fade bottom>
-          <button  onClick={handleClick} className='btn btn--orange'>Send my Free Analysis</button>
+          <button  onClick={handleClick} className='btn btn--orange'><a href='#analysis' style={{textDecoration: 'none', color: 'white'}}>Send my Free Analysis</a></button>
         </Fade>
       </div>
     </div>

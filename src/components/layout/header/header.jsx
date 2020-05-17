@@ -2,8 +2,18 @@ import React from 'react'
 import '../../../styles/main.scss'
 // import Logo from '../../../assets/img/logo-white.png'
 import Fade from 'react-reveal'
+import ReactGA from 'react-ga';
+
 
 const header = () => {
+
+  const handleClick = () => {
+    ReactGA.event({
+      category: 'Button',
+      action: `Clicked 'Send My Free Analysis' button in Header`
+    })
+  }
+
   return (
     <div className='header'>
       {/* <div className="header__logo-box">
@@ -22,7 +32,7 @@ const header = () => {
           </Fade>
         </h1>
         <Fade bottom>
-          <a href="#quote" className='btn btn--orange'>Send my Free Analysis</a>
+          <button  onClick={handleClick} className='btn btn--orange'>Send my Free Analysis</button>
         </Fade>
       </div>
     </div>

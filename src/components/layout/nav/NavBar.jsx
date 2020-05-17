@@ -26,7 +26,7 @@ export const NavBar = () => {
   const handleClick = () => {
     ReactGA.event({
       category: 'Button',
-      action: `Clicked 'Get A Quote' button in price card`
+      action: `Clicked 'Get A Quote' button in navbar`
     });
 
     setIsModalOpen(true)

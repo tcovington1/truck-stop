@@ -27,7 +27,7 @@ const Card = ({heading, price, frontDetails, backDetails, headingColor}) => {
   const handleClick = () => {
     ReactGA.event({
       category: 'Button',
-      action: `Clicked 'Send My Free Analysis' button in Header`
+      action: `Clicked 'Get A Quote' button in price card`
     });
 
     setIsModalOpen(true)

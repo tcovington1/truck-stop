@@ -13,7 +13,7 @@ export const blogIndex = () => {
         <div className="blog-post_container">
           <Link to='/five-ways-to-grow-your-mobile-business-online'><img src={imgBlogOne} class="blog-img" alt="actionable-tips-to-maximize-your-mobile-business-profit"/></Link>
           <h2 className='heading-tertiary--lgfont'><Link className="blog-link" to='/five-ways-to-grow-your-mobile-business-online'>5 Ways To Grow Your Mobile Business Online</Link></h2>
-          <p className='blog-body'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus, magna vitae rutrum ornare, orci nulla vestibulum quam, sit amet maximus turpis tellus sed ipsum. Suspendisse sem ligula, molestie sed euismod nec, consectetur quis diam. Mauris lobortis elit non rhoncus pellentesque. Nunc dictum nec tellus nec hendrerit...</p><br />
+          <p className='blog-body'>If you're wanting to grow your business, the best way to do so is by getting online effectively. Here are five effective ways you can grow your small business online....</p><br />
           <Link className='btn-text my2' to='/five-ways-to-grow-your-mobile-business-online'><strong>Read Article</strong> <span class=""></span></Link> <hr />
         </div>
         <div className="blog-post_container ">

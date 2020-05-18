@@ -1,6 +1,9 @@
 import React, { useEffect } from 'react';
 import './styles/main.scss';
 import { Route, Switch, } from 'react-router-dom';
+import  { Breakpoint, BreakpointProvider } from 'react-socks';
+
+
 import Landing from './pages/Landing';
 import { blogIndex } from './components/blog/blogIndex';
 import Footer from './components/layout/Footer';
@@ -10,6 +13,7 @@ import { WhyWebsiteBlog } from './components/blog/WhyWebsiteBlog';
 
 import ReactGA from 'react-ga';
 import { NavBar } from './components/layout/nav/NavBar';
+import NavBarMob from './components/layout/nav/NavBarMob';
 
 
 function App() {
@@ -23,15 +27,22 @@ function App() {
 
   return (
     <>
-    <NavBar />
-    <Switch>
-        <Route exact path="/" component={Landing} />
-        <Route  path="/blog" component={blogIndex} />
-        <Route   path="/five-ways-to-grow-your-mobile-business-online" component={fiveReasons} />
-        <Route   path="/what-almost-every-mobile-business-does-wrong" component={WrongBlog} />
-        <Route   path="/why-every-mobile-business-needs-a-website" component={WhyWebsiteBlog} />
-    </Switch>
-      <Footer />
+    <BreakpointProvider>
+      <Breakpoint medium down>
+        <NavBarMob />
+      </Breakpoint>
+      <Breakpoint large up>
+        <NavBar />
+      </Breakpoint>
+      <Switch>
+          <Route exact path="/" component={Landing} />
+          <Route  path="/blog" component={blogIndex} />
+          <Route   path="/five-ways-to-grow-your-mobile-business-online" component={fiveReasons} />
+          <Route   path="/what-almost-every-mobile-business-does-wrong" component={WrongBlog} />
+          <Route   path="/why-every-mobile-business-needs-a-website" component={WhyWebsiteBlog} />
+      </Switch>
+        <Footer />
+    </BreakpointProvider>
     </>
   );
 }

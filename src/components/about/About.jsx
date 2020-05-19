@@ -2,9 +2,9 @@ import React, { useState } from 'react'
 import '../../styles/main.scss'
 import Fade from 'react-reveal/Fade'
 import AboutCard from './AboutCard'
-// import Modal from 'react-modal'
+import Modal from 'react-modal'
 import ServicesCard from './ServicesCard'
-import { Modal } from 'react-responsive-modal';
+// import { Modal } from 'react-responsive-modal';
 
 import servicesData from './servicesData'
 
@@ -17,17 +17,18 @@ import twotoneMobileFriendly from '@iconify/icons-ic/twotone-mobile-friendly';
 import baselineRateReview from '@iconify/icons-ic/baseline-rate-review';
 
 
-// const customStyles = {
-//   content : {
-//     top                   : '50%',
-//     left                  : '50%',
-//     right                 : 'auto',
-//     bottom                : 'auto',
-//     marginRight           : '-50%',
-//     transform             : 'translate(-50%, -50%)',
-//     width: '50%'
-//   }
-// };
+const customStyles = {
+  content : {
+    top                   : '50%',
+    left                  : '50%',
+    right                 : 'auto',
+    bottom                : 'auto',
+    marginRight           : '-50%',
+    transform             : 'translate(-50%, -50%)',
+    width: '50%',
+    
+  }
+};
 
 const About = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -53,27 +54,29 @@ const About = () => {
                 </p>
                 
                 <button onClick={() => setIsModalOpen(true)} className="btn-text">Learn more &rarr;</button>
-                {/* <Modal isOpen={isModalOpen} onRequestClose={() => setIsModalOpen(false)}
+                <Modal isOpen={isModalOpen} onRequestClose={() => setIsModalOpen(false)}
                   style={customStyles}
-                  > */}
-                <Modal open={isModalOpen} onClose={() => setIsModalOpen(false)}
-                  center 
                   >
-                    <h1>Website Design</h1>
-                    <p>Hello</p>
+                {/* <Modal open={isModalOpen} onClose={() => setIsModalOpen(false)}
+                  center 
+                  > */}
+                    {/* <h1>Website Design</h1>
+                    <p>Hello</p> */}
 
-                    {/* {servicesData.map(service => {
+                    {servicesData.map(service => {
                       if (service.id === 1) {
                           return <ServicesCard 
-                          modal={isModalOpen} 
-                          setModal={setIsModalOpen}
+                            modal={isModalOpen} 
+                            setModal={setIsModalOpen}
                             id={service.id}
                             title={service.title}
-                            body={service.body}
+                            p1={service.p1}
+                            p2={service.p2}
+                            p3={service.p3}
                           />
-                        }
+                        } 
                       }) 
-                    } */}
+                    }
                 </Modal>
               </div>
             </div>
@@ -93,11 +96,15 @@ const About = () => {
                   center 
                   >
                     {servicesData.map(service => {
+                      console.log(service.id)
                       if (service.id === 2) {
                           return <ServicesCard 
                             modal={isModalOpen} 
                             setModal={setIsModalOpen}
                             title={service.title}
+                            p1={service.p1}
+                            p2={service.p2}
+                            p3={service.p3}
                           />
                         }
                       }) 
@@ -126,11 +133,15 @@ const About = () => {
                             modal={isModalOpen} 
                             setModal={setIsModalOpen}
                             title={service.title}
+                            p1={service.p1}
+                            p2={service.p2}
+                            p3={service.p3}
                           />
                         }
                       }) 
                     }
-                </Modal>              </div>
+                </Modal>              
+                </div>
             </div>
             <div className="col-1-of-4">
               <div className="feature-box">
@@ -153,7 +164,9 @@ const About = () => {
                             modal={isModalOpen} 
                             setModal={setIsModalOpen}
                             title={service.title}
-                            body={service.body}
+                            p1={service.p1}
+                            p2={service.p2}
+                            p3={service.p3}
                           />
                         }
                       }) 

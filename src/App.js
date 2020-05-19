@@ -14,6 +14,7 @@ import { WhyWebsiteBlog } from './components/blog/WhyWebsiteBlog';
 import ReactGA from 'react-ga';
 import { NavBar } from './components/layout/nav/NavBar';
 import NavBarMob from './components/layout/nav/NavBarMob';
+import OurProcess from './components/process/OurProcess';
 
 
 function App() {
@@ -37,9 +38,11 @@ function App() {
       <Switch>
           <Route exact path="/" component={Landing} />
           <Route  path="/blog" component={blogIndex} />
-          <Route   path="/five-ways-to-grow-your-mobile-business-online" component={fiveReasons} />
-          <Route   path="/what-almost-every-mobile-business-does-wrong" component={WrongBlog} />
-          <Route   path="/why-every-mobile-business-needs-a-website" component={WhyWebsiteBlog} />
+          <Route  path="/five-ways-to-grow-your-mobile-business-online" component={fiveReasons} />
+          <Route  path="/what-almost-every-mobile-business-does-wrong" component={WrongBlog} />
+          <Route  path="/why-every-mobile-business-needs-a-website" component={WhyWebsiteBlog} />
+          <Route  path="/our-process" component={OurProcess} />
+
       </Switch>
         <Footer />
     </BreakpointProvider>

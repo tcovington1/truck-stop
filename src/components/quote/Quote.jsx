@@ -14,13 +14,13 @@ class Quote extends Component {
 
 
 
-  render(modal, setModal) {
+  render() {
     const { name, email, website } = this.state
     return (
       <>
         <div className="section-quote" id='quote'>
               <form className='form' action="https://formspree.io/xpzywnlz" method="POST">
-                  <div className="u-center-text u-margin-bottom-big">
+                  <div className="u-center-text my3">
                     <h1 className="heading-secondary">
                       Request A Quote
                     </h1>
@@ -84,8 +84,7 @@ class Quote extends Component {
                   </div>
                 </form>
                     <div className="u-center-text">
-                      <button className='btn btn--orange_secondary' onClick={() => setModal(!modal)}>Close</button>
-                      {console.log(modal)}
+                      <button className='btn btn--orange_secondary' onClick={() => this.props.setModal(!this.props.modal)}>Close</button>
                     </div>
                     
               </div>

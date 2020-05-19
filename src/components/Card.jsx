@@ -15,8 +15,9 @@ const customStyles = {
     bottom                : 'auto',
     marginRight           : '-50%',
     transform             : 'translate(-50%, -50%)',
-    height: '99vh',
+    height: '88vh',
     width: '60%',
+    marginTop: '2rem'
 
   }
 };

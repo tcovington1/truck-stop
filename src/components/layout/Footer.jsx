@@ -27,7 +27,7 @@ const Footer = () => {
         </div>
         <div className="col-1-of-2">
           <p className="footer__copyright">
-            Built by <a href="https://www.taylorjcovington.com" className='footer__link'>Taylor J Covington</a>. Copryright &copy; Taylor J Covington
+            Built by <a href="https://www.taylorjcovington.com" className='footer__link'>Design To Market Studio</a>. Copryright &copy; TheTruckStop.com
           </p>
         </div>
       </div>

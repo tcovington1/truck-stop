@@ -47,7 +47,7 @@ const NavBarMob = () => {
 
       <nav className="navmobile__nav">
         <ul className="navmobile__list">
-          <li className="navmobile__item"><Link to='/' className='navmobile__link'>Our Process</Link></li>
+          <li className="navmobile__item"><Link to='/our-process' className='navmobile__link'>Our Process</Link></li>
           <li className="navmobile__item"><Link to='/' className='navmobile__link'>Pricing</Link></li>
           <li className="navmobile__item"><Link to='/blog' className='navmobile__link'>Learn</Link></li>
           <li><button onClick={handleClick} className='btn btn--orange'>Request a Quote</button></li>

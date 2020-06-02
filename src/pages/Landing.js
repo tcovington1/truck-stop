@@ -7,13 +7,17 @@ import Quote from '../components/quote/Quote';
 import Analysis from '../components/analysis/analysis'
 import Footer from '../components/layout/Footer';
 import About from '../components/about/About';
+import HomeBlog from '../components/blog/home-blog/HomeBlog';
+import Why from '../components/why/Why';
 
 function Landing() {
   return (
     <div className="App">
       <Header />
       <About />
-      <Testimonials />
+      {/* <HomeBlog /> */}
+      <Why />
+      {/* <Testimonials /> */}
       <Prices />
       <Analysis />
       {/* <Footer /> */}

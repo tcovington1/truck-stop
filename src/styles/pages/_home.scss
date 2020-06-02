@@ -42,10 +42,10 @@
   background-size: cover;
   margin-top: -7rem;
 
-  transform: skewY(-4deg);
+  transform: skewY(-3deg);
   
   & > * {
-    transform: skewY(4deg);
+    transform: skewY(3deg);
     
   }
 
@@ -62,7 +62,7 @@
 }
 
 .quote {
-  background-image: linear-gradient(105deg, rgba($color-white, .9) 0%,rgba($color-white, .9) 60%, transparent 60%) ,url(../../assets/fishnchips.jpg);
+  background-image: linear-gradient(105deg, rgba($color-white, .9) 0%,rgba($color-white, .9) 60%, transparent 60%) ,url(../../assets/freeanalysis.svg);
   background-size: cover;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba($color-black, .2);

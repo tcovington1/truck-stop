@@ -28,6 +28,10 @@ clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 
 .blog-img{
   width: 50%;
+
+  &_home {
+    width: 90%;
+  }
 }
 
 .blog-link {
@@ -79,3 +83,11 @@ clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 }
 }
 
+
+// Home blog
+
+.home-blog {
+  width: 100%;
+  height: 50rem;
+  border: 1px white solid;
+}

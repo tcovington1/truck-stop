@@ -39,7 +39,7 @@ const About = () => {
         <Fade left>
           <div className="u-center-text u-margin-bottom-big">
             <h1 className="heading-secondary">
-              Providing Online Services for Mobile Businesses
+              Providing Online Services for Small Businesses
             </h1>
           </div>
         </Fade>

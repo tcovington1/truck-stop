@@ -35,7 +35,7 @@ export const NavBar = () => {
 
   return (
     <div className='navbar'>
-      <div className="navbar_logo heading-secondary"><Link to='/' className='blog-link'>DTM Studio</Link></div>
+      <div className="navbar_logo heading-secondary"><Link to='/' className='blog-link'>TRUCK STOP</Link></div>
       <div className='navbar_link-container'>
         <ul className='navbar_navlinks'>
           <li><Link to='/our-process' className='blog-link'>Our Process</Link></li>

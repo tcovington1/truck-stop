@@ -22,10 +22,10 @@ const header = () => {
       <div className="header__text-box">
         <h1 className='primary-heading'>
           <Fade left>
-            <span className='primary-heading--main'>Design To Market Studio</span>
+            <span className='primary-heading--main'>Truck Stop Design</span>
           </Fade>
           <Fade right>
-            <span className='primary-heading--sub'>we take your small business online</span>
+            <span className='primary-heading--sub'>we take your mobile business online</span>
           </Fade>
           <Fade right>
             <span className='primary-heading--ter'>and get you more customers</span>

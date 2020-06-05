@@ -7,14 +7,14 @@ const Why = () => {
   return (
     <>
      <section className='section-testimonials' >
-      <div className="u-center-text u-margin-bottom-small">
+      <div className="u-center-text u-margin-bottom-small" >
         <Fade up>
           <h1 className="heading-secondary--white">
-            What Makes DTM Studio Different? 
+            What Makes Truck Stop Studio Different? 
           </h1>
         </Fade>
       </div>
-      <div className='row' style={{backgroundColor: 'white', padding: '4rem'}}>
+      <div className='row' style={{backgroundColor: 'white', padding: '4rem', borderRadius: '10px'}}>
         <div className="col-1-of-2">
           <p>Our primary focus is to build effective websites through simple, creative designs and digital marketing. We take this one step further by really caring about your business is it's success.</p>
           <br/>

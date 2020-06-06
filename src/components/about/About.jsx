@@ -47,7 +47,7 @@ const About = () => {
           <div className="row">
             <div className="col-1-of-4">
               <div className="feature-box">
-                <Icon icon={roundBuild} width='55' className='feature-box__icon' color='#277' />
+                <Icon icon={roundBuild} width='70' className='feature-box__icon' color='#277' />
                 <h3 className="heading-tertiary heading-tertiary-lgfont u-margin-bottom-small">Website Design</h3>
                 <p className="feature-box__text u-margin-bottom-small">
                   We design and build your website to <i>improve your sales</i>.
@@ -82,7 +82,7 @@ const About = () => {
             </div>
             <div className="col-1-of-4">
               <div className="feature-box">
-                <Icon icon={baselineSearch} width='55' className='feature-box__icon' color='#277'/>
+                <Icon icon={baselineSearch} width='70' className='feature-box__icon' color='#277'/>
                 <h3 className="heading-tertiary heading-tertiary-lgfont u-margin-bottom-small">SEO</h3>
                 <p className="feature-box__text u-margin-bottom-small ">
                   We get your website <i>found</i> by ranking on <strong>Google</strong>.
@@ -114,7 +114,7 @@ const About = () => {
             </div>
             <div className="col-1-of-4">
               <div className="feature-box">
-                <Icon icon={baselineRateReview} width="55" className='feature-box__icon' color='#277' />
+                <Icon icon={baselineRateReview} width="70" className='feature-box__icon' color='#277' />
                 <h3 className="heading-tertiary heading-tertiary-lgfont u-margin-bottom-small">AdWords</h3>
                 <p className="feature-box__text u-margin-bottom-small">
                   We manage your <strong>Google Ads</strong> to ensure customers <i>see your site</i>.
@@ -145,7 +145,7 @@ const About = () => {
             </div>
             <div className="col-1-of-4">
               <div className="feature-box">
-                <Icon icon={twotoneMobileFriendly} width="55" className='feature-box__icon' color='#277' />
+                <Icon icon={twotoneMobileFriendly} width="70" className='feature-box__icon' color='#277' />
                 <h3 className="heading-tertiary heading-tertiary-lgfont u-margin-bottom-small">Social Media</h3>
                 <p className="feature-box__text  u-margin-bottom-small">
                   We help get the word out through social media.
